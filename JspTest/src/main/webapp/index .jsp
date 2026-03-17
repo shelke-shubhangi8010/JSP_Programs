@@ -7,8 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%out.print(2*5);%>
-<% out.print("My Name Is Shubhangi <br>");%>
-<%out.print("Addition : "+3+4); %>
+<%
+String name=request.getParameter("uname");
+out.print("Welcome "+name);
+
+%>
 </body>
 </html>
