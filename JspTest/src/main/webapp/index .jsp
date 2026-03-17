@@ -7,10 +7,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-String name=request.getParameter("uname");
-out.print("Welcome "+name);
 
-%>
+
+<%! int age=24; %>
+
+<% int data= 50; %>
+
+<%! int cube(int n)
+{
+return n*n*n;
+}%>
+<%= "cube of 5 :"+cube(5) %>
+
+
+<%= "Welcome to java Server Page" %> 
+
+<%="Welcome "+request.getParameter("uname")+"Password : "+request.getParameter("upass")
++"Age :"+age %>
+
 </body>
 </html>
