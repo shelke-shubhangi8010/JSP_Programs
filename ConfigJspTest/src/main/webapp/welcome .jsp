@@ -12,5 +12,12 @@ String d= config.getInitParameter("dname");
 out.print("File is :"+d);
 
 %>
+<br>
+<% 
+String cname= application.getInitParameter("dname");
+out.print("Project level info :"+cname);
+
+%>
+
 </body>
 </html>

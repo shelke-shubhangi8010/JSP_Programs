@@ -8,8 +8,14 @@
 </head>
 <body>
 <% out.print("Welcome "+request.getParameter("uname"));
-String d= config.getInitParameter("dname");
+String d= config.getInitParameter("admin");
 out.print("File is :"+d);
+
+%>
+<br>
+<% 
+String cname= application.getInitParameter("dname");
+out.print("Project level info :"+cname);
 
 %>
 </body>
