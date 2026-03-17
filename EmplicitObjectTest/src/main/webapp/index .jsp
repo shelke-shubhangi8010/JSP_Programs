@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%String n= request.getParameter("uname");
-out.print("Hello "+n);
+<% response.sendRedirect("http://www.google.com");
 %>
 
 
