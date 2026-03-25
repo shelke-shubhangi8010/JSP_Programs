@@ -1,4 +1,3 @@
-<%@page import="java.util.GregorianCalendar"%>
 <%@page import="java.util.Calendar"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -9,8 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file="index.html"  %>
-
-Todays is : <%=java.util.Calendar.getInstance().getTime() %>
+<% out.print("Today is : "+Calendar.getInstance().getTime()); %>
+<%= request.getParameter("uname")%>
 </body>
 </html>
